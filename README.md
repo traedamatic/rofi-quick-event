@@ -41,7 +41,8 @@ Buy groceries
 ### Install
 
 ```bash
-cd ~/Projects/quick-event
+git clone https://github.com/traedamatic/rofi-quick-event.git
+cd rofi-quick-event
 bun install
 cp .env.example .env
 ```
@@ -61,10 +62,10 @@ DEFAULT_DURATION_MINUTES=60
 
 ### i3 keybind
 
-Already configured in `~/.config/i3/config`:
+onfigure if `~/.config/i3/config` if wanted:
 
 ```
-bindsym $mod+y exec --no-startup-id ~/Projects/quick-event/run.sh
+bindsym $mod+y exec --no-startup-id /path/to/rofi-quick-event/run.sh
 ```
 
 Reload i3: `$mod+Shift+r`
