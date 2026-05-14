@@ -1,0 +1,58 @@
+* {
+    bg:         #0c0c1eee;
+    fg:         #6df1d8;
+    accent:     #ff2975;
+    border-col: #8c1eff;
+    placeholder-fg: #5c2c6d;
+    prompt-fg:  #0c0c1e;
+    transparent: transparent;
+}
+
+window {
+    width:            500px;
+    location:         center;
+    anchor:           center;
+    transparency:     "real";
+    background-color: @bg;
+    border:           2px;
+    border-color:     @border-col;
+    border-radius:    0px;
+    padding:          0;
+}
+
+mainbox {
+    background-color: @transparent;
+    children:         [ inputbar ];
+    spacing:          0;
+    padding:          0;
+}
+
+inputbar {
+    background-color: @transparent;
+    text-color:       @fg;
+    padding:          16px 20px;
+    children:         [ prompt, entry ];
+    spacing:          12px;
+}
+
+prompt {
+    background-color: @accent;
+    text-color:       @prompt-fg;
+    padding:          6px 12px;
+    border-radius:    0px;
+    font:             "monospace bold 14";
+}
+
+entry {
+    background-color: @transparent;
+    text-color:       @fg;
+    placeholder:      "Doctors appointment at 10am tomorrow...";
+    placeholder-color: @placeholder-fg;
+    padding:          6px 0;
+    font:             "monospace 14";
+    cursor:           text;
+}
+
+listview {
+    enabled: false;
+}
