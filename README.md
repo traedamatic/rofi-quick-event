@@ -1,4 +1,4 @@
-# quick-event
+# rofi-quick-event
 
 Minimal calendar event creator for i3. Type natural language, get a Fastmail calendar event.
 
